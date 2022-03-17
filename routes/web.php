@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ProductsController;
+use App\Http\Controllers\PagesController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,10 +14,13 @@ use App\Http\Controllers\ProductsController;
 */
 
 
+Route::get('/', [PagesController::class, 'index']);
+Route::get('/about', [PagesController::class, 'about']);
+
 
 //Laravel 8(new way)
-Route::get('/products', 
-    [ProductsController::class, 'index'])->name('products');
+// Route::get('/products', 
+//     [ProductsController::class, 'index'])->name('products');
 
 // Pattern is an integer
 // Route::get('/products/{id}', 
