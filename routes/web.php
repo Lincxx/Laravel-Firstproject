@@ -13,12 +13,11 @@ use App\Http\Controllers\ProductsController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('home');
-// });
+
 
 //Laravel 8(new way)
-Route::get('/products', [ProductsController::class, 'index']);
+Route::get('/products', 
+    [ProductsController::class, 'index'])->name('products');
 
 // Pattern is an integer
 // Route::get('/products/{id}', 
@@ -29,8 +28,8 @@ Route::get('/products', [ProductsController::class, 'index']);
 //     [ProductsController::class, 'show'])->where('name', '[a-zA-Z]+');
 
 // multi Pattern
-Route::get('/products/{name}/{id}', 
-    [ProductsController::class, 'show'])->where('name', '[a-zA-Z]+', 'id', '[0-9]+');
+// Route::get('/products/{name}/{id}', 
+//     [ProductsController::class, 'show'])->where('name', '[a-zA-Z]+', 'id', '[0-9]+');
 
 
 //----------examples

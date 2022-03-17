@@ -7,13 +7,13 @@ use Illuminate\Http\Request;
 class ProductsController extends Controller
 {
     public function index() {
-        $title = "Welcome to my Laravel 8 course";
-        $description = "Create by Jeremy";
+        // $title = "Welcome to my Laravel 8 course";
+        // $description = "Create by Jeremy";
 
-        $data = [
-            'product1' => 'iPhone',
-            'product2' => 'Samsung',
-        ];
+        // $data = [
+        //     'product1' => 'iPhone',
+        //     'product2' => 'Samsung',
+        // ];
 
         // Compact method
         // return view('products.index', 
@@ -25,9 +25,11 @@ class ProductsController extends Controller
         //return view('products.index')->with('data', $data);
 
         // Directly in the view
-        return view('products.index', [
-            'data' => $data
-        ]);
+        // return view('products.index', [
+        //     'data' => $data
+        // ]);
+        print_r(route('products'));
+        return view('products.index');
 
     }
 

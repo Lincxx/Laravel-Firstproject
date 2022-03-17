@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Products</h1>
-    <p>{{ $product }}</p>
+    <a href="{{ route('products') }}">Products</a>
     
 </body>
 </html>
