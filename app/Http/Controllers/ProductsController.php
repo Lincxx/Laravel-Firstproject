@@ -41,7 +41,7 @@ class ProductsController extends Controller
             'samsung' => 'Samsung',
         ];
         return view('products.index', [
-            'product' => $data[$name] ?? 'Product ' . $name . ' does not exist'
+            'product' => $data[$name] ?? 'Product ' . $name . ' does not exist!'
         ]);
     }
 }
