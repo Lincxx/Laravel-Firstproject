@@ -26,3 +26,22 @@ Route::get('/products/about', [ProductsController::class, 'about']);
 
 // // Before Laravel 8 - this doesn't work anymore
 // Route::get('products', 'ProductsController@index');
+
+// -----------------------------
+// Route to user - string
+// Route::get('/user', function () {
+//     return 'Welcome to the users page';
+// });
+
+// // Route to user - array
+// Route::get('/user', function () {
+//   return ['PHP', 'HTML', 'Laravel'];
+// });
+
+// //Route to user - JSON 
+// Route::get('/user', function () {
+//   return response()->json([
+//     'name' => 'Dary', 
+//     'course' => 'Laravel Beginners To Advanced'
+//   ]);
+// });
