@@ -12,13 +12,22 @@
 
     <ul>
         <li>
-            <a href="">About</a>
+            <a href="/"
+            class="{{ request()->is('/') ? 'active' : '' }}">
+                Home
+            </a>
         </li>
         <li>
-            <a href="">Portfolio</a>
+            <a href="about"
+            class="{{ request()->is('about') ? 'active' : '' }}">
+                About
+            </a>
         </li>
         <li>
-            <a href="">Contact</a>
+            <a href="portfolio">Portfolio</a>
+        </li>
+        <li>
+            <a href="contact">Contact</a>
         </li>
     </ul>
 </nav>
